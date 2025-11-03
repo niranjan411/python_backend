@@ -1,10 +1,5 @@
 fastapi
-uvicorn
-python-dateutil
-pytz
-pydantic
-python-multipart
-pyephem
+
 
 datetime
 flask==2.3.3

@@ -21,12 +21,12 @@ def format_life_experience_data(life_exp_data):
         formatted[key] = f"{value:,}"
     return formatted
 
-@app.route('/api/calculate/formatted', methods=['POST'])
+@app.route('/result', methods=['POST'])
 def calculate_complete_profile():
     try:
         data = request.get_json()
         
-        # Validate required fields
+        
         required_fields = ['date', 'time', 'latitude', 'longitude']
         for field in required_fields:
             if field not in data:
