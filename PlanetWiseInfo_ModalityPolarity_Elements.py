@@ -1,4 +1,4 @@
-import swisseph as swe
+import swisseph as swe 
 from datetime import datetime
 
 class AstrologicalCalculator:
