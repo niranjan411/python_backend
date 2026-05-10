@@ -86,9 +86,7 @@ def calculate_complete_profile():
             "error": f"Server error: {str(e)}"
         }), 500
 
-@app.route('/api/health', methods=['GET'])
-def health_check():
-    return jsonify({"status": "healthy", "message": "Astrological API is running"})
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
